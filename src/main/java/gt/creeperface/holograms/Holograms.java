@@ -1,6 +1,7 @@
 package gt.creeperface.holograms;
 
 
+import cn.nukkit.Nukkit;
 import cn.nukkit.Player;
 import cn.nukkit.Server;
 import cn.nukkit.entity.Entity;
@@ -91,6 +92,11 @@ public class Holograms extends HologramAPI implements Listener {
     @Override
     public void onEnable() {
         if (loaded) return;
+        if (!Nukkit.NUKKIT_PM1E.equals(getServer().getName())) {
+            getLogger().error("This version is for Nukkit PM1E! Download the official one from cloudburstmc.org");
+            return;
+        }
+
         getLogger().info("Loading characters...");
         loadCharsWidths();
 

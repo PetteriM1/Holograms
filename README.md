@@ -1,2 +1,5 @@
 # Holograms
-Hologram plugin for nukkit
+Hologram plugin for Nukkit PM1E
+
+##### [Download](https://github.com/PetteriM1/Holograms/releases)
+
